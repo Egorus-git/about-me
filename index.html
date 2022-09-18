@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#aboutMe" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section section-profile" id = "profile">
+                <img src = "aboutMe.jpg" alt="" class="section-profile-logo">
+                <div class="section-profile-title">
+                    <h1 class = "section-title-main"> Egor Kozitskiy: University student </h1>
+                    <h3 class = "section-subtitle"> Intern Front-End Developer </h3>
+                </div> 
+            
+            </section>
+
+            <section class="section" id = "contacts">
+                <h2 class="section-title">Contacts</h2>
+                    <ul class="section-list">
+                        <li class="section-item"> Location: Moscow, Russia </li>
+                        <li class="section-item"> E-mail: vizart532@mail.ru </li>
+                        <li class="section-item"> GitHub: https://github.com/Egorus-git </li>
+                        <li class="section-item"> Discord: Egorus#8605 </li>
+                        <li class="section-item"> Codewars: https://www.codewars.com/users/Egorus-git </li>
+                    </ul>
+            </section>
+
+            <section class="section" id = "aboutMe">
+                    <h2 class="section-title">About me</h2>
+                    <p> I can work c++ and c# up to object oriented programming. I also know puthonat a basic level. I know how to make simple websites and work with figma. I'm currently learning Javascript and HTML/CSS because I love it and want to develop in it.     
+                    </p>
+            </section>
+
+            <section class="section" id = "skills">
+                <h2 class="section-title"> Skills </h2>
+                <ul class="section-list">
+                    <li class="section-item"> Javascript </li>
+                    <li class="section-item"> HTML + CSS </li>
+                    <li class="section-item"> Git </li>
+                    <li class="section-item"> Figma </li>
+                    <li class="section-item"> DOM </li>
+                </ul>
+            </section>
+
+            <section class="section" id = "code">
+                <h2 class="section-title"> Code example:</h2>
+                <p> The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
+                </p>
+                <pre class="pre"><code>function duplicateEncode(word){
+    let result = '';
+    word = word.toLowerCase();
+    for (let char of word){
+        word.split(char).length - 1 != 1 ? result += ')' : result += '('
+    }
+    return result;
+}
+                </code></pre>
+            </section>
+            
+            <section class="section-last" id = "education">
+                <h2 class="section-title"> Education </h2>
+                <p> Bachelor of Information Security, 2024 (in progress): Moscow Technical University of Communications and Informatics, Moscow </p>
+            </section>
+
+            <section class="section-last" id = "languages">
+                <h2 class="section-title"> Languages </h2>
+                <ul class="section-list">
+                    <li class="section-item"> Russian: Native </li>
+                    <li class="section-item"> English: basic school level </li>
+
+                </ul>
+            </section>
+        </div>
+
+
+
+    </main>
+    <script src = "index.js"></script>
+</body>
+</html>
